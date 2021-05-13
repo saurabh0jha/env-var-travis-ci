@@ -7,7 +7,7 @@ function sleep(ms) {
 
 async function main() {
   while(true) {
-    console.log("Microservices rock!");
+    console.log("Here is a SUPER SECRET! SSHHH! ");
     console.log(processObj.env.SUPER_SECRET);
     await sleep(5000);
   }
