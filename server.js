@@ -7,7 +7,7 @@ function sleep(ms) {
 
 async function main() {
   while(true) {
-    console.log("HERE IS A SUPER SECRET! SSHHH! ");
+    console.log(`HERE IS A SUPER SECRET ${processObj.env.NAME} ! SSHHH! `);
     console.log(processObj.env.SUPER_SECRET);
     await sleep(5000);
   }
