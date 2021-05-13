@@ -15,7 +15,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t travis-env-node --build-arg SUPR_SCRT=${SUPR_SCRT} --build-arg NAME=${NAME}
+  - docker build -t travis-env-node --build-arg SUPR_SCRT="$SUPR_SCRT" --build-arg NAME="$NAME" .
   - docker tag travis-env-node saurabh0jha/travis-env-node:latest
 
 after_success:
